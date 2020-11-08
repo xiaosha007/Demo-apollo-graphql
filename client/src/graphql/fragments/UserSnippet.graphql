@@ -1,0 +1,9 @@
+fragment UserSnippet on User{
+    id,
+    name,
+    email,
+    createdAt,
+    status,
+    permissions,
+    role
+}
