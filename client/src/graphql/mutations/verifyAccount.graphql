@@ -1,0 +1,20 @@
+mutation VerifyAccount($token:String!,$password:String!){
+  verifyAccount(
+    token: $token
+    password: $password
+  ) {
+    user {
+      name
+      email
+      status
+      permissions
+      role
+      createdAt
+    }
+    errors {
+      field
+      message
+    }
+    token
+  }
+}

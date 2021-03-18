@@ -1,0 +1,28 @@
+mutation UpdateUser(
+  $id: Int!
+  $permissions: [Int!]!
+  $role: Int!
+  $status: Int!
+  $name: String!
+  $email: String!
+) {
+  updateUser(
+    id: $id
+    permissions: $permissions
+    role: $role
+    status: $status
+    name: $name
+    email: $email
+  ) {
+    user {
+      name
+      status
+      permissions
+      role
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

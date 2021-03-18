@@ -1,0 +1,9 @@
+query isAuth{
+  isUser{
+    id,
+    email,
+    name,
+    createdAt,
+    updatedAt
+  }
+}

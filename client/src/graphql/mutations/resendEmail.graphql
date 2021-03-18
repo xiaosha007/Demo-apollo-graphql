@@ -1,0 +1,15 @@
+mutation ResendEmail($email:String!){
+  resendVerificationEmail(email:$email){
+    errors{
+      field
+      message
+    }
+    user{
+      name
+      email
+      status
+      permissions
+      createdAt
+    }
+  }
+}
